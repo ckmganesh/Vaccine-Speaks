@@ -1,8 +1,8 @@
 import tweepy
 from clean_tweet import clean
 
-auth = tweepy.OAuthHandler("omVkx3kIEbFHLTzedKI0lgPqY", "FhpRdZgkN5vsOY3UbDQRU6pYogrE3PllGhBxVusd1klu1TaeLQ")
-auth.set_access_token("1286993581748576259-MlEeqriaMSvXWq4jZTy4QzgvzyAwEH", "Ry4cClbYXi3SctwFXI4JYgmiKKVFv13ILIlS5cfWZCj4J")
+auth = tweepy.OAuthHandler("ACCESS_KEY", "ACCESS_SECRET_KEY")
+auth.set_access_token("ACCESS_TOKEN", "ACCESS_TOKEN_SECRET")
 auth.secure = True
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
